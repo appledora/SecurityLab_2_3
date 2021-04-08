@@ -3,7 +3,9 @@ from collections import Counter
 import re
 from itertools import tee, islice
 
-alphaMapping1 = {}
+alphaMapping1 = {"a": "x", "b": "y", "c": "w", "d": "l", "e": "c", "f": "n", "g": "o", "h": "p", "i": "h", "j": "s", "k": "r", "l": "z",
+                 "m": "t", "n": "a", "o": "i", "p": "j", "q": "k", "r": "b", "s": "m", "t": "e", "u": "g", "v": "q", "w": "u", "x": "v", "y": "f", "z": "d", " ": " ", "\n": "\n"}
+
 alphaMapping2 = {"a": "v", "b": "u", "c": "s", "d": "h", "e": "a", "f": "l", "g": "m", "h": "n", "i": "f", "j": "q", "k": "p", "l": "o",
                  "m": "r", "n": "w", "o": "g", "p": "y", "q": "z", "r": "x", "s": "i", "t": "c", "u": "e", "v": "t", "w": "j", "x": "k", "y": "d", "z": "b", " ": " ", "\n": "\n"}
 
