@@ -31,7 +31,7 @@ def ceaser_decrypt(target, shift):
 
 def main():
     objType = input(
-        "type 1 if you want to encrypt a string and 2 if you want decrypt... \n")
+        "type 1 if you want to decrypt a string with a key and 2 if you want to decrypt in Brute-force... \n")
     if (int(objType) == 1):
         target = input(
             "Type the string you want to DECRYPT with a known KEY : \n")

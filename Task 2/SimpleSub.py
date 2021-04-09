@@ -2,7 +2,7 @@ import time
 from collections import Counter
 import re
 from itertools import tee, islice
-
+import matplotlib.pyplot as plt
 alphaMapping1 = {"a": "x", "b": "y", "c": "w", "d": "l", "e": "c", "f": "n", "g": "o", "h": "p", "i": "h", "j": "s", "k": "r", "l": "z",
                  "m": "t", "n": "a", "o": "i", "p": "j", "q": "k", "r": "b", "s": "m", "t": "e", "u": "g", "v": "q", "w": "u", "x": "v", "y": "f", "z": "d", " ": " ", "\n": "\n"}
 
@@ -56,6 +56,7 @@ def ngrams(str, n):
         else:
             break
 
+
 def getStatistics (textWOspace):
     print("---------------------- S.T.A.T.I.S.T.I.C.S --------------------")
     calculateCharFrequency(textWOspace)
@@ -88,15 +89,16 @@ def main():
         alphaMapping = alphaMapping1
 
     elif (int(objType) == 2):
-        start_time = time.time()
         alphaMapping = alphaMapping2
-        print("--- %s seconds ---" % (time.time() - start_time))
 
     else:
         print("Only select 1 or 2")
         main()
 
+    start_time = time.time()
     print("".join([alphaMapping.get(x, '') for x in text.lower()]))
+    print("--- %s seconds ---" % (time.time() - start_time))
+
     print("Congratulations!")
     print(" -------------------------------------------------------------------------------- ")
 
