@@ -48,7 +48,7 @@ def main():
 
     else:
         print("Only select 1 or 2")
-
+        main()
     print("Congratulations!")
 
 
