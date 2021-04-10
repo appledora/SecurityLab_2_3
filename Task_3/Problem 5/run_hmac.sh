@@ -1,4 +1,4 @@
-echo "----- Generating Hash ----"
+echo "----- Generating HMAC ----"
 echo "\nMD5 Key=abcdefg"
 openssl dgst -md5 -hmac "abcdefg" hmac_input.txt
 echo "\nMD5 Key=abcd"
